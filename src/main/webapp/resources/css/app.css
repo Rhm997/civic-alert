@@ -1,0 +1,260 @@
+#sidebar {
+    background-image: linear-gradient(to top, #01152b , var(--primary-color-anm));
+}
+
+#sidebar .sidebar-header {
+    padding: 15px 0;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--secondary-color-anm) 50%, var(--primary-color-anm) 50%) right
+}
+
+.btn-primary:hover {
+    color: #FFFFFF;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color-anm);
+}
+
+.page-title {
+    color: var(--secondary-color-anm)
+}
+
+#sidebarCollapse:hover {
+   /* color: var(--primary-color-anm);*/
+    transform: scale(1.25);
+}
+
+.navbar-right li > *:hover {
+    color: var(--primary-color-anm);
+}
+
+.fp-card-header .card-body-title {
+    color: var(--primary-color-anm);
+}
+
+.input-box.focus .input-label {
+    color: var(--primary-button);
+    /* font-weight: bold; */
+}
+
+.col-auto.titlu-categorie.subtitlu + .col {
+    border-left: 3px solid var(--primary-color-anm);
+    /* border-right: 3px solid var(--primary-color-adis); */
+}
+
+.col-auto.titlu-categorie.subtitlu {
+    color: var(--primary-color-anm);
+}
+
+.active-da:checked + label {
+    color: var(--primary-color-anm);
+}
+
+#coverLogin {
+    background-size: cover;
+    background-position: 20% 29%;
+    padding-bottom: unset !important;
+    padding-top: unset !important;
+}
+
+.container-image-login-xl {
+    /*background: url("../images/user/bacau4.png") 0% 80% no-repeat;*/
+}
+
+/*.user-container {*/
+/*  box-shadow: 0px 20px 308px 581px white !important;*/
+/*}*/
+
+.content-tabs {
+    box-shadow: 0 0.15rem 1rem rgba(var(--bs-body-color-rgb), .15) !important;
+    border: 1px solid #dedede;
+    padding: 9px;
+    height: 100%;
+}
+
+.btn-renunta {
+    background: #6e6e6f;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    margin-block: 12px;
+}
+
+.btn-renunta:hover {
+    background: var(--secondary-color-anm);
+
+}
+
+.title-login {
+    color: #FFFFFF;
+}
+
+.wrapper {
+    /* background-color: #1b511426; */
+    padding: unset !important;
+    /* height: 70vh; */
+}
+
+#formContent {
+    left: unset !important;
+    top: 37%;
+}
+
+#formContent input {
+    background-color: #FFFFFF;
+
+}
+
+#formContent input::placeholder {
+    transition: all .2s;
+    font-weight: 600;
+}
+
+#formContent input:hover::placeholder,
+#formContent input:focus::placeholder {
+    color: var(--main-color);
+}
+
+#formContent input:hover,
+#formContent input:focus {
+    background-color: #efedec;
+}
+
+#formFooter a {
+    color: #f5f5f5 !important;
+}
+/*
+.underlineHover:after {
+    background-color: #f5f5f5 !important;
+}*/
+
+/*.logged-user-letters {
+    background-color: #e0efe1 !important;
+}*/
+
+.logged-user-letters:hover {
+    background-color: #b5b5b5 !important;
+}
+
+.login-shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c52;
+    height: 100%;
+
+}
+
+.form-control.new-input.focus-bottom-border.uat-select {
+    font-size: 1rem;
+    height: 41px;
+    border: 1px solid #626e84;
+    border-radius: .25rem;
+}
+
+.uat-label {
+    font-size: 1rem !important;
+}
+
+.uat-container .input-group-text {
+    border-radius: 3px 0 0 3px;
+    border: none;
+    background-color: var(--primary-color-anm);
+    color: white;
+    height: 30px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#uatSelect, #groupSelect {
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 0 3px 3px 0;
+    height: 30px;
+}
+
+.location-tab-title, .dateleMelePage .content-tabs h6 {
+    color: var(--secondary-color-anm);
+}
+
+.location-points .new-input {
+    background-color: transparent;
+}
+
+.location-point .input-box.focus .input-label, .input-box.active .input-label, .input-box.active-grey .input-label {
+    background: transparent !important;
+}
+
+.test-bins .titlu-categorie.subtitlu {
+    margin-top: .3rem;
+}
+
+/*table.table thead > tr > th:nth-child(even) {*/
+/*  background: #f2f2f2;*/
+/*}*/
+
+/*table.table tbody > tr > td:nth-child(even) {*/
+/*  background: #f2f2f2;*/
+/*}*/
+
+/*.table tbody tr td, .table tbody tr th {*/
+/*  border: 1px solid #dedede;*/
+/*}*/
+
+
+.dateleMelePage .content-tabs {
+    height: unset;
+}
+
+.vscomp-toggle-button {
+    border: none !important;
+    background: transparent !important;
+    padding: 7px 30px 7px 0px !important;
+}
+
+.vscomp-ele {
+    max-width: unset !important;
+}
+
+.vscomp-wrapper.focused .vscomp-toggle-button, .vscomp-wrapper:focus .vscomp-toggle-button {
+    box-shadow: none !important;
+}
+
+#uatSolicitant, #judet_id_change, #jud_loc_point_pub, #localitate {
+    margin-top: 5px;
+}
+
+.vscomp-option.focused,
+.vscomp-option.selected {
+    background-color: #dcebde !important;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: var(--primary-color-anm);
+}
+
+.bins-subtitle {
+    display: none;
+}
+
+.location-subtitle, .bins-subtitle {
+    font-weight: 600;
+    color: var(--primary-color-anm);
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.location-body, .bins {
+    background: #f3faf4;
+    width: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+}

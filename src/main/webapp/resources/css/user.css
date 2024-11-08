@@ -1,0 +1,146 @@
+.form-container {
+  justify-content: center;
+  overflow-y: auto;
+  max-height: 700px;
+}
+
+.page-title {
+  /*margin-left: 205px;*/
+  transition: all .1s;
+  height: 60px;
+  margin: 0;
+  line-height: 60px;
+
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  /*border-bottom: 2px solid #cfcfcf;*/
+  padding: 0 15px;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.page-content {
+  height: calc(100% - 60px);
+  padding: 15px 15px 0px 15px;
+}
+
+button, input {
+  border: none;
+}
+
+/*
+.btn-default, .btn-default:disabled, .btn-default.disabled {
+  color: #fff;
+  background-color: var(--primary-button-hover);
+  border-color: var(--primary-button-hover);
+}
+*/
+
+.btn-default:not(:disabled):hover, .btn-default:not(:disabled):not(.disabled):active, .btn-default:not(:disabled):focus {
+  color: #fff;
+  background-color: var(--primary-button);
+  border-color: var(--primary-button);
+}
+
+.margin-title {
+  margin-left: calc(0% + 230px);
+  transition: all .1s;
+}
+
+/*.container-user-content {*/
+/*    display: flex;*/
+/*}*/
+
+.container-image-login-xl {
+  background-size: auto 100%;
+  flex: 2;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-container {
+  box-shadow: 0px 20px 308px 408px white;
+  background: white;
+  min-height: 100%;
+}
+
+.dateleMelePage {
+  flex: 1;
+  /* padding: 0 15px 0 30px; */
+}
+
+#enableDate, #disableDate, #saveDate {
+  margin: 13px 0 15px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-group .col-lg-12 {
+  margin-bottom: 5px;
+}
+
+.page-content .col-4 {
+  min-height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container-image-login-lg {
+    background: unset;
+  }
+}
+
+.checks-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+
+}
+
+.checks-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checks-form div .form-check-input {
+  height: 20px;
+  width: 20px;
+}
+
+.modal-header {
+  border-bottom: unset;
+}
+
+.modal-title {
+  color: var(--primary-color-anm);
+}
+
+/*#loggedUserId {*/
+/*    display: none;*/
+/*}*/
+
+/*#loggedUserId.shown {*/
+/*    display: inline;*/
+/*}*/
+
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  background-color: var(--primary-color-anm);
+  color: white;
+}
+
+.card-header {
+  background-color: #dae6f9;
+}
+
+

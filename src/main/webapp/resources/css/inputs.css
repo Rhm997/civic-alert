@@ -1,0 +1,281 @@
+/* 
+    classe pentru inputuri (pe input-box)
+    active
+    active-grey
+    error
+*/
+#uat_for_user {
+    height: 46px;
+    appearance: auto;
+}
+
+.new-input {
+    box-sizing: border-box;
+    height: 37px;
+    width: 100%;
+    color: var(--bs-primary-input-text);
+    border: none;
+    border-bottom: 1px solid var(--f-border-color);
+    transition: all 250ms;
+    margin-top: 15px;
+    padding: 0 0.35rem;
+    border-radius: 0;
+    font-size: 0.8rem;
+}
+
+
+/*input.new-input, .input-box.active-grey .new-input {*/
+/*  border: unset;*/
+/*  border-bottom: 1px solid var(--f-border-color);*/
+/*}*/
+.new-input:disabled {
+    background: #e8e8e8;
+    color: #b2b2b2;
+    cursor: not-allowed;
+    /* color: var(--bs-form-control-disabled-bg); */
+}
+
+.new-input:disabled ~ .input-label {
+    color: #a7a7a7;
+}
+
+.new-input:focus {
+    box-shadow: none !important;
+}
+
+.input-box.active-grey .new-input {
+    /* border-bottom: 1px solid var(--f-border-color); */
+
+}
+
+.input-box.active-grey .input-label svg {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    transition: 250ms;
+}
+
+.input-box.disabled .new-input {
+    /* background: #e9ecef; */
+}
+
+.input-box {
+    --label-top: -10px;
+    position: relative;
+    margin: 10px 0 0px;
+}
+
+.input-box .input-label {
+    position: absolute;
+    color: var(--f-secondary);
+    font-size: 15px;
+    /*font-weight: 600;*/
+    max-width: calc(100% - (2 * 8px));
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 7px;
+    left: 0.2rem;
+    padding: 0 0.15rem;
+    transition: 250ms;
+    user-select: none;
+    pointer-events: none;
+    /* color: var(--bs-form-control-disabled-bg); */
+}
+
+.input-box.disabled .input-label {
+    /*color: var(--bs-form-control-disabled-bg);*/
+    /* color: #c9c9c9; */
+}
+
+.input-box .input-label svg {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    transition: 250ms;
+}
+
+
+.new-input:not(select) {
+    padding-left: 5px;
+}
+
+.input-box .new-input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--f-color-focus);
+    transition: 250ms;
+}
+
+.input-box.error .input-label {
+    color: var(--f-color-focus);
+    top: var(--label-top);
+    /* background: #00000021; */
+    font-size: 0.9rem;
+    transition: 250ms;
+    /*font-weight: 600;*/
+}
+
+.input-box.error .new-input {
+    border-bottom: 2px solid var(--f-color-focus);
+}
+
+.input-box.focus .input-label,
+.input-box.active .input-label,
+.input-box.active-grey .input-label {
+    /*color: var(--bs-primary-text);*/
+    top: var(--label-top);
+    background: #f8f8f8  !important;
+    font-size: 0.8rem;
+    transition: 250ms;
+    /* left: 0.35rem; */
+    /* padding: 0 .15rem; */
+    font-weight: 500;
+}
+div.div-header .input-box.focus .input-label,
+div.div-header .input-box.active .input-label,
+div.div-header .input-box.active-grey .input-label {
+    background: var(--bs-form-control-bg) !important;
+}
+
+
+.input-box.disabled.focus .input-label,
+.input-box.disabled.active .input-label,
+.input-box.disabled.active-grey .input-label {
+    /* background: linear-gradient(to bottom, var(--bs-form-control-bg) 45%, var(--bs-form-control-disabled-bg) 50%); */
+    /* color: var(--bs-form-control-disabled-bg); */
+}
+
+.input-box.focus .input-label svg,
+.input-box.active .input-label svg {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    transition: 250ms;
+}
+
+.input-box.active .new-input {
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+.new-input.new-input-activ {
+    border-bottom: unset;
+}
+
+.select2-container .select2-selection.new-input .select2-selection__rendered {
+    color: var(--bs-primary-input-text);
+    padding-top: 0;
+    padding-left: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    /* line-height: 1; */
+    line-height: 35px;
+}
+
+/* selectize */
+.selectized {
+    padding-top: 1px;
+}
+
+body .selectize-control .selectize-input {
+    background: inherit !important;
+    box-shadow: none !important;
+    padding: 0;
+    height: 100%;
+    border: none;
+    color: inherit;
+}
+
+body .selectize-control .selectize-input input {
+    height: 100%;
+    color: var(--bs-primary-input-text);
+    font-size: var(--bs-body-font-size);
+}
+
+.selectize-input .item {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--bs-body-font-size);
+}
+
+.selectize-dropdown .selected, .selectize-dropdown .active {
+    background-color: var(--bs-primary);
+    color: var(--bs-primary-text);
+}
+
+.selectize-dropdown .active:not(.selected) {
+    background: var(--bs-active);
+    color: var(--bs-primary);
+}
+
+/* placeholder */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--bs-primary-input-text);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--bs-primary-input-text);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--bs-primary-input-text);
+}
+
+.form-check-input:checked {
+    /*background-color: var(--background-primary-btn);*/
+    border-color: var(--f-color-focus);
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+    background-color: #ddd;
+}
+
+/* Iput file */
+body .form-control[type="file"]::-webkit-file-upload-button {
+    background: var(--bs-primary-input-text);
+    content: 'alege';
+    color: var(--bs-primary);
+}
+
+body .form-control[type="file"] {
+    color: var(--bs-primary-input-text);
+    direction: rtl
+}
+
+.culoareVerde {
+    display: none;
+}
+
+.daterange + i {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    width: 10px;
+    height: 10px;
+    display: inline;
+}
+
+.input-label.label-obl {
+    color: #dc3545;
+}
+
+.form-check-input[type=checkbox]:focus, .form-check-input[type=radio]:focus {
+    box-shadow: unset;
+}
+
+.form-check-label {
+    cursor: pointer;
+}

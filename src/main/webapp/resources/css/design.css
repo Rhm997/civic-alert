@@ -1,0 +1,101 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgba(255, 255, 255, 79%);
+  background: #ffffffc9;
+  /*  background-image: url("../images/back/bckg.jpg"); */
+  font-size: 0.8rem;
+  color: #443f39;
+  color: var(--main-color);
+  background-size: 200%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+  width: calc(100% - 200px);
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+@media ( max-width: 980px) {
+  #content {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------
+    DUAL LISTBOX STYLE
+----------------------------------------------------- */
+.multi-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border: unset;
+}
+
+.multi-wrapper .search-input {
+  flex: 1 0 100%;
+}
+
+.multi-wrapper .header {
+  border-bottom: 1px solid var(--f-secondary);
+}
+
+.multi-wrapper .non-selected-wrapper, .multi-wrapper .selected-wrapper {
+  width: unset;
+  max-width: 50%;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-height: 300px;
+  overflow-y: auto;
+  border: unset;
+}
+
+.multi-wrapper .non-selected-wrapper .item.selected {
+  display: none;
+}
+
+.multi-wrapper .non-selected-wrapper .item.disabled, .multi-wrapper .selected-wrapper .item.disabled {
+  text-decoration: none;
+}
+
+.btn-primary {
+  border-radius: 3px;
+  padding: 5px 15px;
+  border: none;
+  transition: all .2s;
+  color: white;
+  background: linear-gradient(90deg, var(--secondary-color-anm) 50%, var(--primary-color-anm) 50%) right;
+  background-size: 200% 100%;
+}
+
+.btn-primary:hover {
+  border: none;
+  background-position: left !important;
+}
+
+.btn-secondary {
+  border-radius: 3px;
+  padding: 5px 15px;
+  border: none;
+  transition: all .2s;
+  background: linear-gradient(90deg, var(--secondary-color-anm) 50%, #eeeeee 50%) right;
+  background-size: 200% 100%;
+}
+
+.btn-secondary:hover {
+  background-position: left;
+  color: var(--bs-btn-hover-color);
+}
+
+.dropdown-item {
+  font-size: 13px;
+}

@@ -1,0 +1,180 @@
+/* LOADING */
+#idLoading {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.35;
+    z-index: 1000;
+
+}
+
+#imgLoading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border: none;
+    outline: none;
+}
+
+#idPrintOpen {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    /* display: none; */
+    background-image: url("../icon/png/print4.png");
+}
+
+.c-mask, .c-maskUpload {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    background-color: #464646;
+    opacity: 0;
+    transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active, .c-maskUpload.is-active {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+#floatingCirclesG {
+    position: relative;
+    z-index: 1000;
+    width: 144px;
+    height: 144px;
+    margin: auto;
+    transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+}
+
+.f_circleG {
+    position: absolute;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    height: 26px;
+    width: 26px;
+    border-radius: 14px;
+    -o-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    animation-name: f_fadeG;
+    -o-animation-name: f_fadeG;
+    -ms-animation-name: f_fadeG;
+    -webkit-animation-name: f_fadeG;
+    -moz-animation-name: f_fadeG;
+    animation-duration: 0.622s;
+    -o-animation-duration: 0.622s;
+    -ms-animation-duration: 0.622s;
+    -webkit-animation-duration: 0.622s;
+    -moz-animation-duration: 0.622s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+}
+
+#frotateG_01 {
+    left: 0;
+    top: 59px;
+    animation-delay: 0.2295s;
+    -o-animation-delay: 0.2295s;
+    -ms-animation-delay: 0.2295s;
+    -webkit-animation-delay: 0.2295s;
+    -moz-animation-delay: 0.2295s;
+}
+
+#frotateG_02 {
+    left: 17px;
+    top: 17px;
+    animation-delay: 0.316s;
+    -o-animation-delay: 0.316s;
+    -ms-animation-delay: 0.316s;
+    -webkit-animation-delay: 0.316s;
+    -moz-animation-delay: 0.316s;
+}
+
+#frotateG_03 {
+    left: 59px;
+    top: 0;
+    animation-delay: 0.3925s;
+    -o-animation-delay: 0.3925s;
+    -ms-animation-delay: 0.3925s;
+    -webkit-animation-delay: 0.3925s;
+    -moz-animation-delay: 0.3925s;
+}
+
+#frotateG_04 {
+    right: 17px;
+    top: 17px;
+    animation-delay: 0.469s;
+    -o-animation-delay: 0.469s;
+    -ms-animation-delay: 0.469s;
+    -webkit-animation-delay: 0.469s;
+    -moz-animation-delay: 0.469s;
+}
+
+#frotateG_05 {
+    right: 0;
+    top: 59px;
+    animation-delay: 0.5455s;
+    -o-animation-delay: 0.5455s;
+    -ms-animation-delay: 0.5455s;
+    -webkit-animation-delay: 0.5455s;
+    -moz-animation-delay: 0.5455s;
+}
+
+#frotateG_06 {
+    right: 17px;
+    bottom: 17px;
+    animation-delay: 0.622s;
+    -o-animation-delay: 0.622s;
+    -ms-animation-delay: 0.622s;
+    -webkit-animation-delay: 0.622s;
+    -moz-animation-delay: 0.622s;
+}
+
+#frotateG_07 {
+    left: 59px;
+    bottom: 0;
+    animation-delay: 0.6985s;
+    -o-animation-delay: 0.6985s;
+    -ms-animation-delay: 0.6985s;
+    -webkit-animation-delay: 0.6985s;
+    -moz-animation-delay: 0.6985s;
+}
+
+#frotateG_08 {
+    left: 17px;
+    bottom: 17px;
+    animation-delay: 0.775s;
+    -o-animation-delay: 0.775s;
+    -ms-animation-delay: 0.775s;
+    -webkit-animation-delay: 0.775s;
+    -moz-animation-delay: 0.775s;
+}
+
+
+

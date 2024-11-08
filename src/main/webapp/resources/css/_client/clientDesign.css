@@ -1,0 +1,139 @@
+.select-language {
+  cursor: pointer;
+}
+.view-question-card .question-title {
+  color: var(--primary-color-anm);
+  font-size: 15pt;
+  font-weight: 500;
+}
+.question-description {
+  font-style: italic;
+  font-size: 9pt;
+  padding-block: 10px;
+  color: #818080;
+}
+.div-answers label{
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding-block: 5px;
+}
+
+.view-question-card {
+  border: 1px solid var(--bs-active);
+  border-radius: 0.8rem;
+  box-shadow: 2px 2px 20px #e3e3e3;
+  background: #FFFFFF;
+}
+
+.final-obs {
+  background: #efefef;
+  padding: 20px 10px;
+}
+
+.survey-description {
+  font-size: 1rem;
+  position: sticky;
+  top: 70px;
+  background: #ffffffe6;
+  padding-bottom: 25px;
+  box-shadow: 1px 1px 1px #e3e3e3;
+  z-index: 1;
+}
+
+.parent-survey .survey-title {
+  color: var(--secondary-color-anm);
+  font-size: 20pt;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  background: #ffffffe6;
+  padding-block: 15px;
+  z-index: 1;
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+  /* position: relative; */
+}
+
+#viewQuestion.page-content {
+  padding: 40px 15px;
+}
+
+.fp-card-footer div:not(.survey-completed):hover {
+  color: var(--primary-color-anm);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.fp-card-footer div {
+  font-size: .9rem;
+  line-height: 1.65;
+  display: inline;
+}
+
+.fp-card-footer div.survey-completed {
+  color: var(--secondary-color-anm);
+  cursor: initial;
+}
+
+#divMsg {
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+  position: relative;
+}
+
+.msg-content-body {
+  font-size: 1.35rem;
+}
+
+.msg-header-title {
+  color: var(--primary-color-anm);
+}
+.msg-footer div{
+  font-size: 15px;
+}
+/**/
+
+.fp-card-footer .fa{
+  font-size: 15px;
+  width: 20px;
+}
+
+
+#viewQuestion .parent-survey {
+  background: #ededed;
+}
+
+
+#listResponse #viewQuestion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+ul.zones-list{
+  max-height: 100px;
+  overflow: auto;
+}
+
+#asocContainer button {
+ height: 20px;
+  width: 20px;
+  padding:1px;
+}
+
+#asocContainer .search-asoc-container ul {
+ list-style-type: none;
+  padding: 5px;
+}
+
+#asocContainer select {
+  border: 1px solid #c5c5c5;
+  padding: 6px 2px;
+  border-radius: 5px
+}
+
+div.fp-card-footer.surveys-container-for-asoc .asoc-user-surveys{
+  display: block;
+}

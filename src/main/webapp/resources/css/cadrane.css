@@ -1,0 +1,383 @@
+.grid {
+    position: relative;
+}
+
+.grid .item {
+    position: absolute;
+    /*width: calc(33.33% - 10px);*/
+    /* height: 198px; */
+    margin: 5px;
+    z-index: 1;
+    box-shadow: 0 0 3px 0px #b0aeae;
+    border: 1px solid #dedede;
+    /*padding: 7px;*/
+    transition: all 0.2s linear;
+}
+
+.grid .item.muuri-item-hidden {
+    z-index: 0;
+}
+
+.grid .item.muuri-item-releasing {
+    z-index: 2;
+}
+
+.grid .item.muuri-item-dragging {
+    z-index: 3;
+}
+
+.grid .item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #757575;
+    padding: 0 5px;
+}
+
+.grid .item.muuri-item-dragging .item-content {
+    background: blue;
+}
+
+.grid .item.muuri-item-releasing .item-content {
+    background: blueViolet;
+}
+
+.grid .muuri-item-placeholder {
+    background: #f5f5f5;
+}
+
+.header-chart {
+    height: 20px;
+}
+
+.for-dragging {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #dedede; */
+    color: #6c6c6c;
+    cursor: grab;
+    padding: 5px 0;
+}
+
+.for-dragging:active {
+    cursor: grabbing;
+}
+
+.header-dashboard-right {
+    display: flex;
+    font-size: 18px;
+    gap: 6px;
+    align-items: center;
+}
+
+.form-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.new-input.dashboard-type-select {
+    height: 30px;
+    width: 100%;
+}
+
+.select-chart-type-container {
+    width: 25%;
+}
+
+.header-dashboard-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-dashboard-left h5 {
+    margin-bottom: 0;
+}
+
+.header-dashboard-right {
+    cursor: pointer;
+}
+
+.header-dashboard-right .fa-gear,
+.header-dashboard-right .min-max-trigger,
+.header-dashboard-right .fa-square-arrow-up-right {
+    transition: all .3s;
+}
+
+.header-dashboard-right .fa-gear:hover,
+.header-dashboard-right .min-max-trigger:hover,
+.header-dashboard-right .fa-square-arrow-up-right:hover {
+    transform: rotate(-90deg);
+}
+
+#addDashboards, .card-to-add-header {
+    border-bottom: 1px solid #bebebe;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+#addDashboards {
+    margin: 0 5px 5px 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3px;
+}
+
+
+.elements-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#modalAddElements .modal-title {
+    color: #6c6c6c;
+}
+
+.card-to-add {
+    box-shadow: 0px 0px 3px #858585;
+    border: none;
+    padding: 5px;
+    transition: all .2s;
+}
+
+.card-to-add:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.card-to-add-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: calc(100% - 25px);
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 5px;
+}
+
+.card-to-add-body-body {
+    width: 50%;
+}
+
+.card-to-add-body-body img {
+    width: 100%;
+}
+
+#modalConfigDash .modal-body {
+    text-align: center;
+}
+
+.infoEdit .info {
+    font-weight: 600;
+}
+
+.intervalDash {
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: -16px;
+    /* border-right: none; */
+    size: 1;
+    margin: 0;
+    /* font-size: 18px; */
+    /* border-radius: 5px 0 0 5px; */
+    vertical-align: top;
+    margin-right: -11px;
+    /* z-index: 10; */
+    width: 260px !important;
+    display: inline-block !important;
+    /* width: 100% !important; */
+    vertical-align: middle !important;
+}
+
+#dashboardGrid .muuri-resize-cadran-max {
+    z-index: 3000;
+    position: fixed;
+    height: 84vh;
+    width: calc(89% - 51px);
+    /* box-sizing: border-box; */
+    /* margin: 7px 0; */
+    transform: translate(-44%, -50%) !important;
+    top: 53% !important;
+    left: 45% !important;
+    /* transform: translateY(10px); */
+}
+
+.grid .item.h2 {
+    min-height: 170px;
+    /* height: 20vh; */
+}
+
+.grid .item.w2 {
+    min-width: 208px;
+    width: 16.66666;
+}
+
+.grid .item.h3 {
+    min-height: 312px;
+    height: 25vh;
+}
+
+.grid .item.w3 {
+    min-width: 312px;
+    width: 25%;
+}
+
+.grid .item.h4 {
+    min-height: 350px;
+    height: 29.33333vh;
+}
+
+.grid .item.w4 {
+    min-width: 416px;
+    width: 31.33333%;
+}
+
+.grid .item.h5 {
+    min-height: 515px;
+    height: 41.66666vh;
+}
+
+.grid .item.w5 {
+    min-width: 520px;
+    width: 41.66666%;
+}
+
+.grid .item.h6 {
+    min-height: 639px;
+    height: 50vh;
+}
+
+.grid .item.w6 {
+    min-width: 624px;
+    width: 50%;
+}
+
+@media ( max-width: 1700px) {
+    .grid .item.w3 {
+        min-width: 416px;
+        width: 30.33333%;
+    }
+}
+
+.modal-height {
+    height: 84vh;
+}
+
+.textUat {
+    margin: 0px;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.textInterval {
+    font-size: 11px;
+    border-bottom: 1px solid #dedede;
+    margin-top: -7px;
+}
+
+.text-interval-parent {
+    border-bottom: 1px solid #dedede;
+    margin-top: -14px;
+}
+
+.text-interval-parent .text-interval {
+    font-size: 11px;
+}
+
+.text-interval-parent .text-interval-comp {
+    font-size: 11px;
+}
+
+.c2 {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    grid-row-gap: 7px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.cadraneNou_test3 {
+    /* cel cu bara verticala */
+    width: 100%;
+    height: calc(50% - 10px);
+    display: flex;
+    column-gap: 0;
+    line-height: 20px;
+    align-items: center;
+    align-content: center;
+    /* margin: 7px 0;
+     */
+    gap: 10px;
+    justify-content: center;
+}
+
+.c2-33-val, .cfe-PJvalea, .cfe-PJsancel, .cfe-PJjidvei, .cfe-PJcenade, .cfe-PJsona, .cfe-PJcergau {
+    /* width: 45%; */
+    /* display: inline-block; */
+    /* border-right: 2px solid #9a9a9a; */
+    /* padding-right: 12px; */
+    /* border-collapse: collapse;
+     */
+    vertical-align: middle;
+    margin-right: 0px;
+}
+
+.c2-33-separator {
+    border: 1px solid #9a9a9a;
+    width: 1px;
+    height: 17px;
+}
+
+.c2-33-label, .cfe-PJvalea-text, .cfe-PJsancel-text, .cfe-PJjidvei-text, .cfe-PJcenade-text, .cfe-PJsona-text, .cfe-PJcergau-text {
+    /* width: 45%; */
+    /* height: 100%;
+     */
+    display: inline;
+    /* padding-left: 12px; */
+    /* text-align: center; */
+    vertical-align: middle;
+    /* border-collapse: collapse;
+     */
+}
+
+.tipFont {
+    /* font-weight: bold; */
+    font-size: calc(11px + 0.14vw);
+    display: inline;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    /* "Helvetica Neue", Helvetica, Arial, sans-serif;
+     */
+    font-family: 'Poppins', sans-serif;
+}
+
+.labelDashVal, .labelDashVal_fCursor {
+    color: #1b5114;
+    cursor: pointer;
+    /* font-weight: bold; */
+    font-size: 15pt;
+    /* font-size: calc(16px + 0.2vw);
+     */
+    /* 1.8vw;
+     */
+    /* font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+     */
+}
+
+.textColectari h4 {
+    font-size: 14px;
+}
+
+.tetUatNew {
+    margin: 0px;
+    font-size: 11px;
+    padding: 5px;
+    margin-top: -13px;
+}

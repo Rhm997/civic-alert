@@ -1,0 +1,174 @@
+.btn-border::before, .btn-border::after {
+  width: calc(394px - 16px - 8px);
+  content: '';
+  position: absolute;
+  height: 1px;
+  border-top: 1px dashed;
+  transition: border-top-style 200ms, border-top-color 200ms, opacity 200ms 300ms;
+  opacity: 0.45;
+}
+
+.btn-border::after {
+  left: calc(50% - 852px / 2 + 64px / 2);
+}
+
+.btn-border::before {
+  left: calc(50% + 32px - 8px);
+}
+
+div[type='button'].btn-add-question {
+  z-index: 1;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  top: -16px;
+  /*background: linear-gradient(90deg, var(--primary-color-anm) 50%, var(--secondary-color-anm) 50%) right*/
+}
+
+.parent-survey {
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+  position: relative;
+}
+
+.div-question {
+  cursor: grab;
+  border: 1px solid var(--bs-active);
+  /*border-radius: 1.375rem;*/
+  padding: 10px 15px;
+  width: 80%;
+  background: #f8f8f8;
+  box-shadow: 2px 1px 17px var(--bs-active);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+
+}
+.div-question:hover {
+  border: 1px solid var(--secondary-color-anm);
+  /*border-radius: 1.375rem;*/
+}
+
+.parent-survey .new-input{
+  border: var(--bs-border-width) solid #c1c1c1;
+  border-bottom: var(--bs-border-width) solid #c1c1c1;
+  border-radius: .375rem;
+  text-transform: unset;
+}
+
+#divGeneral form textarea, .parent-survey textarea {
+  height: 70px;
+  padding-top: 9px;
+}
+
+#divGeneral {
+  cursor: default;
+  width: 80%;
+}
+
+div.count {
+  color: var(--primary-color-anm);
+  font-size: 1.5rem ;
+}
+
+/*active/inactive switch*/
+
+.switch-button {
+  background: var(--bs-active);
+  border: 2px solid var(--f-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 6px;
+  color: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+}
+
+ .switch-input:checked + .switch-button .switch-button-left {
+    background: var(--secondary-color-anm);
+}
+.switch-input:not(:checked) + .switch-button .switch-button-right {
+  background: var(--primary-color-anm);
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-button span {
+  font-size: 1rem;
+  padding: 0.2rem .7rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.switch-button::before {
+  content: '';
+  position: absolute;
+  box-shadow: 0 1px 3px rgba(0,0,0,.4);
+  border-radius: 4px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  transition: right .1s cubic-bezier(0.175, 0.885, 0.320, 1),
+  padding .2s ease, margin .2s ease;
+}
+
+.switch-button:active::before {
+  padding-left: .4rem;
+}
+
+.switch-input:checked + .switch-button {
+  background-color: var(--bs-active);
+  border-color: var(--f-primary);
+}
+
+.switch-input:checked + .switch-button::before {
+  right: 50%;
+}
+
+.switch-input:checked + .switch-button:active::before {
+  margin-right: -.40rem;
+}
+
+.switch-input[type="checkbox"]:disabled + .switch-button {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/*end active/inactive */
+
+
+.input-check {
+  cursor: pointer;
+}
+.survey-question .input-check {
+  margin-right: 45px;
+}
+
+
+.btn-add-answer {
+  padding: 10px 12px;
+  border-radius: 50%;
+}
+
+.btn-delete-question .fa-trash-can {
+  font-size: 20px;
+  color: var(--primary-color-anm);
+  cursor: pointer;
+}
+
+.btn-delete-question:hover .fa-trash-can {
+ color: var(--primary-color-anm);
+}
