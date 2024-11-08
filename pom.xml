@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <artifactId>anm-survey-management</artifactId>
+  <artifactId>civic-alert</artifactId>
   <build>
-    <finalName>anm-survey-management</finalName>
+    <finalName>civic-alert</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -188,10 +188,10 @@
     </dependency>
 
   </dependencies>
-  <description>ANM Survey Management</description>
+  <description>Civic Alert</description>
   <groupId>com.fida</groupId>
   <modelVersion>4.0.0</modelVersion>
-  <name>anm-survey-management</name>
+  <name>civic-alert</name>
   <packaging>war</packaging>
   <parent>
     <artifactId>spring-boot-starter-parent</artifactId>
