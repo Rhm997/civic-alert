@@ -135,7 +135,6 @@ public class AuthService {
     user = userRepository.save(user);
 
     JwtResponse jwtResponse = authenticateUser(new LoginRequest(user.getEmail(), completeRegisterRequest.getPassword()));
-    jwtResponse.setFirstLogin(1);
 
     return jwtResponse;
   }

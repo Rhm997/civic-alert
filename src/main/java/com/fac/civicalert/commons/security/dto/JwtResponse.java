@@ -18,12 +18,8 @@ import lombok.Setter;
 public class JwtResponse {
 
   private Long id;
-  private String username;
   private String fullName;
   private String email;
   private String token;
   private String userType; // CLIENT/MANAGER
-  private List<String> roles = emptyList();
-  private List<String> groups = emptyList();
-  private Integer firstLogin = 0;
 }
