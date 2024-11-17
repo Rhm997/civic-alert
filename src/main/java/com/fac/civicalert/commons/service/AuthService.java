@@ -40,7 +40,7 @@ public class AuthService {
   @Transactional
   public JwtResponse authenticateUser(final LoginRequest loginRequest) {
     Authentication authentication = authenticationManager.authenticate(
-        new UsernamePasswordAuthenticationToken(loginRequest.getUsername(),
+        new UsernamePasswordAuthenticationToken(loginRequest.getEmail(),
             loginRequest.getPassword()));
 
     SecurityContextHolder.getContext().setAuthentication(authentication);
@@ -58,7 +58,6 @@ public class AuthService {
     return JwtResponse.builder()
         .token(jwt)
         .id(userDetails.getId())
-        .username(userDetails.getUsername())
         .fullName(userDetails.getFullName())
         .email(userDetails.getEmail())
         .userType(userDetails.getUserType())
@@ -78,7 +77,6 @@ public class AuthService {
     user.setLastName(registerUserRequest.getLastName());
     user.setEmail(registerUserRequest.getEmail().toLowerCase());
     user.setUsername(registerUserRequest.getEmail());
-    user.setPhone(registerUserRequest.getPhone());
 
     user.setUserType("CLIENT");
     user.setActive(0);
