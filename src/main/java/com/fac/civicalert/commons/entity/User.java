@@ -58,15 +58,8 @@ public class User extends Auditable {
   @Column(name = "register_token")
   private String registerToken;
 
-//  @ManyToMany(fetch = FetchType.LAZY)
-//  @JoinTable(schema = "app", name = "asoc_user_role", joinColumns = @JoinColumn(name = "id_user"), inverseJoinColumns = @JoinColumn(name = "id_role"))
-//  private Set<Role> roles;
-
   @ManyToMany(fetch = FetchType.LAZY)
   @JoinTable(schema = "app", name = "asoc_user_group", joinColumns = @JoinColumn(name = "id_user"), inverseJoinColumns = @JoinColumn(name = "id_group"))
   private Set<Group> groups;
-
-  @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-  private Set<AsocUserChart> charts;
 
 }

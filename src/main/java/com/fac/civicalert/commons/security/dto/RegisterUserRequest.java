@@ -19,5 +19,4 @@ public class RegisterUserRequest {
   private String lastName;
   private String email;
   private String phone;
-  //ToDo de vazut cum isi alege zonele la register
 }

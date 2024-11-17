@@ -35,13 +35,6 @@ public class UserController {
     return userService.getUser(id);
   }
 
-  @GetMapping("/filtered")
-  public ResponseEntity<List<UserDTO>> getFilteredContracts(
-      @RequestHeader("filters") final String filters) throws JsonProcessingException {
-    return ResponseEntity.ok(
-        userService.findWithFilters(objectMapper.readValue(filters, FiltersDTO.class)));
-  }
-
 //    @GetMapping("/locations")
 //    public ResponseEntity<List<LocationDTO>> getUserLocationTable(ModelMap mModel) {
 //        return ResponseEntity.ok(locationService.getUserLocations(authUtils.getUserId()));

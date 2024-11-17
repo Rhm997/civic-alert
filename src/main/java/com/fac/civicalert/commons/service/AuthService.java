@@ -94,7 +94,6 @@ public class AuthService {
   private void sendEmailAfterRegister(final String to, final String registerToken, HttpServletRequest request) {
     //ToDo check if the link is well formed on production server
     final String emailLink = generateConfirmationLink(request, registerToken);
-    //ToDo de revenit cu template-uri html
     emailService.sendPlainTextEmail(to, "Confirm your email and finish registration", emailLink);
   }
 
@@ -116,7 +115,7 @@ public class AuthService {
     }
 
     baseUrl.append(contextPath)
-        .append("/client/survey/complete-register/")
+        .append("/client/complete-register?token=")
         .append(registerToken);
 
     final String emailLink = baseUrl.toString();

@@ -15,7 +15,7 @@ public class EmailService {
 
   private final JavaMailSender mailSender;
 
-  @Async
+
   public void sendPlainTextEmail(final String to, final String subject, final String body) {
     final SimpleMailMessage message = new SimpleMailMessage();
     message.setTo(to);
@@ -25,7 +25,7 @@ public class EmailService {
     mailSender.send(message);
   }
 
-  @Async
+/*  @Async
   public void sendHtmlEmail(final String to, final String subject, final String htmlContent) throws MessagingException {
     MimeMessage message = mailSender.createMimeMessage();
     message.setContent(htmlContent, "text/html; charset=UTF-8");
@@ -35,5 +35,5 @@ public class EmailService {
     helper.setSubject(subject);
 
     mailSender.send(message);
-  }
+  }*/
 }
