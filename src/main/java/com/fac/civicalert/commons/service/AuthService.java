@@ -16,6 +16,7 @@ import com.fac.civicalert.commons.repository.UserRepository;
 
 import javax.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -145,8 +146,8 @@ public class AuthService {
         .orElseThrow(() -> new UserMessageException("Nu s-a găsit niciun cont asociat cu adresa de e-mail introdusă"));
 
     final String newPassword = RandomStringUtils.random(8, true, true);
-
-    user.setPassword(passwordEncoder.encode(newPassword));
+    String sha256hex = DigestUtils.sha256Hex(newPassword);
+    user.setPassword(passwordEncoder.encode(sha256hex));
     userRepository.save(user);
 
     emailService.sendPlainTextEmail(user.getEmail(), "Parolă resetată cu succes!",
